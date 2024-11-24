@@ -1,0 +1,465 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Nick Doyle</title>
+<meta name="fediverse:creator" content="@njd@hachyderm.io">
+<link rel="me" href="https://hachyderm.io/@njd">
+<style>
+@import url("fonts/JetBrainsMono.css");
+@media (prefers-color-scheme: dark) {
+	body {
+		background: black;
+		color:      white;
+	}
+}
+@media (prefers-color-scheme: light) {
+	body {
+		background: white;
+		color:      black;
+	}
+}
+body {
+	max-width:   8.5in;
+	margin:      auto ;
+	padding:     1.5cm;
+	font-size:   9pt  ;
+	font-family: Arial, sans-serif;
+}
+@media (max-width: 6.5in) {
+	body {
+		padding: 0.75cm;
+	}
+}
+@media print {
+	@page {
+		margin: 1.5cm ;
+		size:   letter;
+	}
+	body {
+		margin:  0;
+		padding: 0;
+	}
+}
+a {
+	color:           inherit;
+	text-decoration: none   ;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2, h3, address, .exp_title {
+	font-family: JetBrains Mono, monospace;
+	font-style:  normal;
+}
+h1, h2 {
+	border:        0     none ;
+	border-bottom: 0.5pt solid;
+}
+h1 {
+	font-size:     30pt;
+	font-weight:   1000;
+	margin:        0   ;
+	margin-bottom: 9pt ;
+}
+h2 {
+	font-size:   18pt        ;
+	font-weight: 875         ;
+	margin:      12pt 0 9pt 0;
+}
+h3, .exp_title {
+	font-size:   12pt;
+	font-weight: 875 ;
+	margin:      0   ;
+}
+#sec_head {
+	position: relative;
+}
+#sec_head address {
+	position:    absolute;
+	top:         0       ;
+	right:       0       ;
+	text-align:  right   ;
+	font-weight: 500     ;
+}
+.exp_title {
+	margin-left: 4pt   ;
+	font-weight: 125   ;
+	font-style:  italic;
+}
+.exp_location {
+	margin:        0     ;
+	margin-bottom: 2pt   ;
+	font-style:    italic;
+}
+.exp_date {
+	font-weight: bold       ;
+	margin:      4pt 0 2pt 0;
+}
+.exp_date .note {
+	margin-left: 4pt   ;
+	font-weight: 125   ;
+	font-style:  italic;
+}
+.publication {
+	font-weight: bold  ;
+	font-style:  italic;
+}
+#sec_experience section {
+	margin-top: 9pt;
+}
+#sec_experience section h3         ,
+#sec_experience section .exp_title ,
+#sec_education  section h3         ,
+#sec_education  section .exp_title {
+	display: inline-block;
+}
+ul {
+	margin:       0   ;
+	padding:      0   ;
+	padding-left: 12pt;
+}
+li {
+	margin: 2pt 0;
+}
+@media (max-width: 6.5in) {
+	#sec_head address {
+		position:    relative;
+		text-align:  left    ;
+	}
+}
+</style>
+</head>
+<body>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_head">
+<h1>Nick Doyle</h1>
+<address>
+	<a href="mailto:jobs@njdoyle.online" >jobs@njdoyle.online</a><br>
+	<a
+		target="_blank"
+		href="https://www.linkedin.com/in/doylenick/"
+	>linkedin.com/in/doylenick</a><br>
+	Ottawa, Ontario, Canada
+</address>
+<p> I am a seasoned software developer with over fifteen years of professional
+full-time experience. I have gained an abundance of experience in large,
+distributed, scalable systems and have had the opportunity to develop strong
+domain knowledge in image processing, image transformation, and image
+optimization with a focus on use for the web. I take a fundamentals-first
+approach to software development which has led to successful, durable, and
+maintainable technologies at a global scale. </p>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_skill">
+<h2>Skill Highlights</h2>
+<ul>
+	<li>
+		Software Architecture and Design,
+		Distributed Systems,
+		Performance and Scalability,
+		Cloud Computing,
+		Full Stack Development
+	</li>
+	<li>
+		Linux,
+		BSD,
+		UNIX,
+		Virtualization,
+		Containerization and Namespaces (like used by Docker and Podman)
+	</li>
+	<li>
+		Package Management,
+		Software Supply Chain,
+		Portability,
+		Contributing to Open Source
+	</li>
+	<li>
+		Java/JVM,
+		C,
+		C++,
+		x86 Assembly,
+		SIMD,
+		POSIX Shell and derivatives,
+		Multithreading
+	</li>
+	<li>
+		Image Optimization,
+		Image Transformation,
+		Image Processing,
+		Computer Vision
+	</li>
+	<li>
+		Adaptable to learning new and unfamiliar technologies and
+		systems
+	</li>
+</ul>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_experience">
+<h2>Experience</h2>
+
+<section id="sec_exp_akamai">
+<h3>Akamai Technologies</h3>
+<div class="exp_title">Principal Software Engineer</div>
+<div class="exp_location">Ottawa, Ontario, Canada</div>
+<div class="exp_date">
+	<time datetime="2012-02">February 2012</time> &ndash;
+	<time datetime="2024-11">November 2024</time>
+</div>
+<ul>
+	<li>
+		Domain specialist and primary developer for image and video
+		processing, transformation, and optimization for the Akamai
+		Image &amp; Video Manager product.
+	</li>
+	<li>
+		Researched, implemented, and augmented computer vision
+		algorithms for performing &ldquo;Perceptual Quality&rdquo;
+		image optimization to maximize image compression without
+		compromising image fidelity as perceived by humans. This
+		process necessitated high throughput and high scalability on
+		general purpose CPUs.
+	</li>
+	<li>
+		Developed a source-based, hermetic package manager to manage
+		system dependencies with focuses on portability, patchability,
+		reproducibility, supply-chain management, vulnerability
+		mitigation, and &mdash; especially &mdash; ease of development.
+		Initially intended to get new technical team members up and
+		running quickly, it evolved into also being our production
+		dependency manager.
+	</li>
+	<li>
+		Coordinated with Mozilla and Google to ensure Firefox's support
+		for AVIF images was colour-correct and compatible with the
+		images produced by Image &amp; Video Manager.
+	</li>
+	<li>
+		Optimized many image processes to improve the scalability and
+		COGS of Image &amp; Video Manager. These optimizations were as
+		low-level as raw x86_64 Assembly to directly take advantage of
+		SIMD AVX2/AVX-512 with up to 20&times; improved throughput on
+		the most critical bottlenecks.
+	</li>
+	<li>
+		Open Source contributions to ImageMagick to improve AVIF and
+		HEIC functionality as well as bug fixes.
+	</li>
+	<li>
+		Co-authored the 2016 O'Reilly Media published book: <i>High
+		Performance Images: Shrink, Load, and Deliver Images for
+		Speed</i>
+	</li>
+	<li>
+		Developed a constant and steady stream of developer and support
+		tooling to help simplify development, debugging, testing,
+		servicing, and selling Image &amp; Video Manager.
+	</li>
+	<li>
+		Consulted directly with customers and prospective customers
+		on-site and remotely on technical matters for both support and
+		sales purposes.
+	</li>
+	<li>
+		Prototyped, on my own initiative, to concretely show the value
+		of a Functions As A Service (FaaS) compute technology using
+		micro-VMs and a custom Linux distribution able to boot in under
+		40ms. Focused on multi-tenant isolation, security, and
+		scalability.
+	</li>
+	<li>
+		Developed a Java-based web application server framework focused
+		on minimizing complexity, simple debugging, and front-line
+		global scalability. This framework was developed for Image
+		&amp; Video Manager but was then adopted by other products like
+		Akamai EdgeKV and internal tools.
+	</li>
+	<li>
+		Developed image optimization features for the Front-End
+		Optimization product that were spun off to create the Image
+		&amp; Video Manager product.
+	</li>
+	<li>
+		Designed, developed, and coordinated the integration of the
+		Blaze.io transformation proxy functionality into the Akamai
+		Ghost proxy.
+	</li>
+	<li>
+		Promoted from Senior Software Engineer to Senior Software
+		Engineer II and finally to Principal Software Engineer.
+	</li>
+</ul>
+</section>
+
+<section id="sec_exp_blazeio">
+<h3>Blaze.io</h3>
+<div class="exp_title">Software Engineer</div>
+<div class="exp_location">Ottawa, Ontario, Canada</div>
+<div class="exp_date">
+	<time datetime="2011-08">August   2011</time> &ndash;
+	<time datetime="2012-02">February 2012</time>
+</div>
+<ul>
+	<li>
+		Software development for the web Front-End Optimization product
+		in a startup environment.
+	</li>
+	<li>
+		Designed and developed an automated optimization to execute,
+		render, and cache client-side JavaScript in an intermediary
+		proxy between the client and the origin server in order to
+		reduce browser execution time on end-user devices.
+	</li>
+	<li>
+		Blaze.io was successfully acquired by Akamai Technologies in
+		February 2012.
+	</li>
+</ul>
+</section>
+
+<section id="sec_exp_ibm">
+<h3>IBM</h3>
+<div class="exp_title">Software Engineer</div>
+<div class="exp_location">Ottawa, Ontario, Canada</div>
+<div class="exp_date">
+	<time datetime="2009-07">July 2009</time> &ndash;
+	<time datetime="2011-07">July 2011</time>
+</div>
+<ul>
+	<li>
+		Software development for the IBM J9 Java Virtual Machine (now
+		known as Eclipse OpenJ9) Memory Manager (Garbage Collector).
+	</li>
+	<li>
+		Improved GC performance by reducing locking, improving thread
+		locality, and developing new strategies for when to tenure
+		objects when using the generational concurrent GC.
+	</li>
+	<li>
+		Overhauled GC observability and metrics through the detailed
+		and machine readable but human friendly &ldquo;verbose
+		GC&rdquo; system.
+	</li>
+</ul>
+<div class="exp_date">
+	<time datetime="2006-01">January 2006</time> &ndash;
+	<time datetime="2008-08">August  2008</time>
+	<span class="note">5&times; 4-month intrenships</span>
+</div>
+<ul>
+	<li>
+		Extreme Blue internship developing automated Java bytecode
+		optimizations for improving application startup time.
+	</li>
+	<li>
+		Extreme Blue internship developing developer tools for
+		discovering, warning on, and refactoring source code
+		duplication and almost-duplication.
+	</li>
+	<li>
+		EPIC internship creating new developer tooling to collect
+		metrics, organize, visualize, and assign ownership of compiler
+		warnings when building the J9 Java Virtual Machine. This tool
+		was used to bring the number of compiler warnings for a build
+		from tens of thousands to zero in a matter of months.
+	</li>
+	<li>
+		EPIC internship developing source control management tooling
+		for the Rational Team Concert (RTC) product.
+	</li>
+	<li>
+		EPIC internship developing the Eclipse Graphical Modelling
+		Framework (GMF).
+	</li>
+</ul>
+</section>
+
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_education">
+<h2>Education</h2>
+
+<section id="sec_edu_unb">
+<h3>University of New Brunswick</h3>
+<div class="exp_title">Bachelor of Computer Science</div>
+<div class="exp_location">Fredericton, New Brunswick, Canada</div>
+<div class="exp_date">
+	<time datetime="2004-09">September 2004</time> &ndash;
+	<time datetime="2009-04">April     2009</time>
+</div>
+<ul>
+	<li>Graduated with honours</li>
+	<li>Co-op designation</li>
+	<li>ACM International Collegiate Programming Competition (ICPC)</li>
+	<li>UNB Programming Club</li>
+	<li>UNB Robotics Competition</li>
+	<li>Undergraduate Lab Assistant</li>
+	<li>Computer Science Peer Mentor</li>
+	<li>Computer Science Association</li>
+</ul>
+</section>
+
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_publications">
+<h2>Notable Publications</h2>
+<ul>
+	<li>
+		<a
+			class="publication"
+			target="_blank"
+			href="https://www.oreilly.com/library/view/high-performance-images/9781491925799/"
+		>High Performance Images:
+		Shrink, Load, and Deliver Images for Speed</a><br>
+		Book &mdash; Co-Author &mdash; O'Reilly Media &mdash;
+		Published November 2016
+	</li>
+	<li>
+		<a
+			class="publication"
+			target="_blank"
+			href="https://patents.google.com/patent/US8161470"
+		>Automated Injection of Java Bytecode
+		Instructions for Java Load Time Optimization via Runtime
+		Checking with Upcasts</a><br>
+		Patent US8161470B2 &mdash; Co-Inventor &mdash;
+		Filed August 2007, Granted April 2012
+	</li>
+</ul>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="sec_miscellany">
+<h2>Miscellany</h2>
+<ul>
+	<li>
+		Proficient in French
+	</li>
+	<li>
+		Enthusiastic about the BSDs and would love the opportunity to
+		use them professionally
+	</li>
+	<li>
+		Modular synthesizer performer and synthesizer enthusiast
+	</li>
+	<li>
+		Was previously a Resident DJ in Ottawa
+	</li>
+</ul>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+</body>
+</html>
